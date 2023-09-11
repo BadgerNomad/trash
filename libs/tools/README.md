@@ -14,9 +14,9 @@ Orm config must contains seeds patterns:
    "type": "postgres",
    "host": "127.0.0.1",
    "port": 5432,
-   "username": "p2p",
-   "password": "p2p",
-   "database": "p2p",
+   "username": "trash",
+   "password": "trash",
+   "database": "trash",
    "synchronize": false,
    "logging": false,
    "entities": [
