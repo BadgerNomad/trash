@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": ".",
+  "monorepo": true,
+  "root": ".",
+  "compilerOptions": {
+    "webpack": false,
+    "tsConfigPath": "tsconfig.json"
+  },
+  "projects": {
+    "auth": {
+      "type": "application",
+      "root": "apps/auth",
+      "entryFile": "main",
+      "sourceRoot": "apps/auth/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/auth/tsconfig.app.json"
+      }
+    },
+    "types": {
+      "type": "library",
+      "root": "libs/types",
+      "entryFile": "index",
+      "sourceRoot": "libs/types/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/types/tsconfig.lib.json"
+      }
+    },
+    "broker": {
+      "type": "library",
+      "root": "libs/broker",
+      "entryFile": "index",
+      "sourceRoot": "libs/broker/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/broker/tsconfig.lib.json"
+      }
+    },
+    "utils": {
+      "type": "library",
+      "root": "libs/utils",
+      "entryFile": "index",
+      "sourceRoot": "libs/utils/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/utils/tsconfig.lib.json"
+      }
+    },
+    "config": {
+      "type": "library",
+      "root": "libs/config",
+      "entryFile": "index",
+      "sourceRoot": "libs/config/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/config/tsconfig.lib.json"
+      }
+    },
+    "cache": {
+      "type": "library",
+      "root": "libs/cache",
+      "entryFile": "index",
+      "sourceRoot": "libs/cache/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/cache/tsconfig.lib.json"
+      }
+    },
+    "tools": {
+      "type": "library",
+      "root": "libs/tools",
+      "entryFile": "index",
+      "sourceRoot": "libs/tools/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/tools/tsconfig.lib.json"
+      }
+    },
+    "queue_restart": {
+      "type": "library",
+      "root": "libs/queue_restart",
+      "entryFile": "index",
+      "sourceRoot": "libs/queue_restart/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/queue_restart/tsconfig.lib.json"
+      }
+    },
+    "tasks": {
+      "type": "library",
+      "root": "libs/tasks",
+      "entryFile": "index",
+      "sourceRoot": "libs/tasks/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/tasks/tsconfig.lib.json"
+      }
+    },
+    "health_checker": {
+      "type": "library",
+      "root": "libs/health_checker",
+      "entryFile": "index",
+      "sourceRoot": "libs/health_checker/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/health_checker/tsconfig.lib.json"
+      }
+    },
+    "media": {
+      "type": "library",
+      "root": "libs/media",
+      "entryFile": "index",
+      "sourceRoot": "libs/media/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/media/tsconfig.lib.json"
+      }
+    }
+  }
+}

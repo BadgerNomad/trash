@@ -1,0 +1,125 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "esModuleInterop": true,
+    "lib": [
+      "ES2021.String"
+    ],
+    "paths": {
+      "@auth": [
+        "apps/auth/src/app"
+      ],
+      "@auth/*": [
+        "apps/auth/src/app/*"
+      ],
+      "@auth_test": [
+        "apps/auth/src/__test__"
+      ],
+      "@auth_test/*": [
+        "apps/auth/src/__test__/*"
+      ],
+      "@jest-custom": [
+        "jest"
+      ],
+      "@jest-custom/*": [
+        "jest/*"
+      ],
+      "@libs/broker_test": [
+        "libs/broker/src/__test__"
+      ],
+      "@libs/broker_test/*": [
+        "libs/broker/src/__test__/*"
+      ],
+      "@libs/broker": [
+        "libs/broker/src"
+      ],
+      "@libs/broker/*": [
+        "libs/broker/src/*"
+      ],
+      "@libs/config": [
+        "libs/config/src"
+      ],
+      "@libs/config/*": [
+        "libs/config/src/*"
+      ],
+      "@libs/oracle_clients": [
+        "libs/oracle_clients/src"
+      ],
+      "@libs/oracle_clients/*": [
+        "libs/oracle_clients/src/*"
+      ],
+      "@libs/queue_restart": [
+        "libs/queue_restart/src"
+      ],
+      "@libs/queue_restart/*": [
+        "libs/queue_restart/src/*"
+      ],
+      "@libs/tasks": [
+        "libs/tasks/src"
+      ],
+      "@libs/tasks/*": [
+        "libs/tasks/src/*"
+      ],
+      "@libs/tools": [
+        "libs/tools/src"
+      ],
+      "@libs/tools/*": [
+        "libs/tools/src/*"
+      ],
+      "@libs/types": [
+        "libs/types/src"
+      ],
+      "@libs/types/*": [
+        "libs/types/src/*"
+      ],
+      "@libs/utils": [
+        "libs/utils/src"
+      ],
+      "@libs/utils/*": [
+        "libs/utils/src/*"
+      ],
+      "@libs/web3": [
+        "libs/web3/src"
+      ],
+      "@libs/web3/*": [
+        "libs/web3/src/*"
+      ],
+      "@libs/local_storage": [
+        "libs/local_storage/src"
+      ],
+      "@libs/local_storage/*": [
+        "libs/local_storage/src/*"
+      ],
+      "@libs/cache": [
+        "libs/cache/src"
+      ],
+      "@libs/cache/*": [
+        "libs/cache/src/*"
+      ],
+      "@libs/health_checker": [
+        "libs/health_checker/src"
+      ],
+      "@libs/health_checker/*": [
+        "libs/health_checker/src/*"
+      ],
+    }
+  },
+  "include": ["apps/**/*", "libs/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,28 @@
+{
+   "type": "postgres",
+   "host": "p2p_postgres",
+   "port": 5432,
+   "username": "p2p",
+   "password": "p2p",
+   "database": "p2p",
+   "schema": "auth",
+   "synchronize": false,
+   "logging": false,
+   "entities": [
+      "dist/apps/auth/src/app/database/entities/**/*.js"
+   ],
+   "migrations": [
+      "dist/apps/auth/src/migrations/**/*.js"
+   ],
+   "subscribers": [
+      "dist/apps/auth/src/subscriber/**/*.js"
+   ],
+   "seeds": [
+      "dist/apps/auth/src/seeds/**/*.js"
+   ],
+   "cli": {
+      "entitiesDir": "apps/auth/src/app/database/entities",
+      "migrationsDir": "apps/auth/src/migrations",
+      "subscribersDir": "apps/auth/src/subscriber"
+   }
+}

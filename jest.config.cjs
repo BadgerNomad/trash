@@ -1,0 +1,28 @@
+module.exports = {
+  moduleFileExtensions: ['js', 'json', 'ts'],
+  rootDir: '.',
+  testRegex: '.*\\.(test|spec)\\.ts$',
+  transform: {
+    '^.+\\.(t|j)s$': 'ts-jest',
+  },
+  collectCoverageFrom: ['**/*.(t|j)s'],
+  coverageDirectory: './coverage',
+  testEnvironment: 'node',
+  roots: ['<rootDir>/apps/', '<rootDir>/libs/'],
+  moduleNameMapper: {
+    '^@jest-custom/(.*)$': '<rootDir>/jest/$1',
+    '^@auth/(.*)$': '<rootDir>/apps/auth/src/app/$1',
+    '^@auth_test/(.*)$': '<rootDir>/apps/auth/src/__test__/$1',
+    '^@libs/auth(|/.*)$': '<rootDir>/libs/auth/src/$1',
+    '^@libs/broker_test(|/.*)$': '<rootDir>/libs/broker/src/__test__/$1',
+    '^@libs/broker(|/.*)$': '<rootDir>/libs/broker/src/$1',
+    '^@libs/config(|/.*)$': '<rootDir>/libs/config/src/$1',
+    '^@libs/queue_restart(|/.*)$': '<rootDir>/libs/queue_restart/src/$1',
+    '^@libs/tasks(|/.*)$': '<rootDir>/libs/tasks/src/$1',
+    '^@libs/tools(|/.*)$': '<rootDir>/libs/tools/src/$1',
+    '^@libs/types(|/.*)$': '<rootDir>/libs/types/src/$1',
+    '^@libs/utils(|/.*)$': '<rootDir>/libs/utils/src/$1',
+    "^@libs/cache(|/.*)$": "<rootDir>/libs/cache/src/$1",
+    "^@libs/health_checker(|/.*)$": "<rootDir>/libs/health_checker/src/$1",
+  },
+};
